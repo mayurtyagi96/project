@@ -23,6 +23,7 @@ class LogInPageVC: UIViewController {
     @IBAction func logInBtnPressed(_ sender: Any) {
         let window = (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.window
         window?.rootViewController = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC")
+        print("Done")
         
     }
     
