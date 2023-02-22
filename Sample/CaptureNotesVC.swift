@@ -5,16 +5,28 @@
 //  Created by Mayur  on 20/02/23.
 //
 
+
 import UIKit
 
 class CaptureNotesVC: UIViewController {
-
+    @IBOutlet weak var view1: UIView!
+    
+    @IBOutlet weak var view6: UIView!
+    @IBOutlet weak var view5: UIView!
+    @IBOutlet weak var view4: UIView!
+    @IBOutlet weak var view3: UIView!
+    @IBOutlet weak var view2: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        cornerRadius(views: view1,view2,view3,view4,view5, view6)
     }
-    
+    func cornerRadius(views: UIView...){
+        for view in views{
+            view.layer.cornerRadius = 5
+            
+        }
+    }
 
     /*
     // MARK: - Navigation
